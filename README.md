@@ -392,13 +392,13 @@ It's user-friendly, available on all platforms and has a cloud sync system. It c
 
 My flashcard database in Anki format: https://ankiweb.net/shared/info/25173560 (thanks [@xiewenya](https://github.com/xiewenya))
 
-### 3. Start doing coding interview questions while you're learning data structures and algorithms, 
+### 3. Start doing coding interview questions while you're learning data structures and algorithms,
 
-You need to apply what you're learning to solving problems, or you'll forget. I made this mistake. Once you've learned a topic, 
-and feel comfortable with it, like linked lists, open one of the coding interview books and do a couple of questions regarding 
-linked lists. Then move on to the next learning topic. Then later, go back and do another linked list problem, 
-or recursion problem, or whatever. But keep doing problems while you're learning. You're not being hired for knowledge, 
-but how you apply the knowledge. There are several books and sites I recommend. 
+You need to apply what you're learning to solving problems, or you'll forget. I made this mistake. Once you've learned a topic,
+and feel comfortable with it, like linked lists, open one of the coding interview books and do a couple of questions regarding
+linked lists. Then move on to the next learning topic. Then later, go back and do another linked list problem,
+or recursion problem, or whatever. But keep doing problems while you're learning. You're not being hired for knowledge,
+but how you apply the knowledge. There are several books and sites I recommend.
 See here for more: [Coding Question Practice](#coding-question-practice)
 
 ### 4. Review, review, review
@@ -409,7 +409,7 @@ Take a break from programming problems for a half hour and go through your flash
 
 ### 5. Focus
 
-There are a lot of distractions that can take up valuable time. Focus and concentration are hard. Turn on some music 
+There are a lot of distractions that can take up valuable time. Focus and concentration are hard. Turn on some music
 without lyrics and you'll be able to focus pretty well.
 
 ## What you won't see covered
@@ -502,29 +502,29 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
         - [Jagged Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_06-jaggedArrays.mp4)
         - [Resizing arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4)
-    - [ ] Implement a vector (mutable array with automatic resizing):
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
-        - [ ] new raw data array with allocated memory
+    - [x] Implement a vector (mutable array with automatic resizing):
+        - [x] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+        - [x] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
-        - [ ] size() - number of items
-        - [ ] capacity() - number of items it can hold
-        - [ ] is_empty()
-        - [ ] at(index) - returns item at given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
+        - [x] size() - number of items
+        - [x] capacity() - number of items it can hold
+        - [x] is_empty()
+        - [x] at(index) - returns item at given index, blows up if index out of bounds
+        - [x] push(item)
+        - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
+        - [x] prepend(item) - can use insert above at index 0
+        - [x] pop() - remove from end, return value
+        - [x] delete(index) - delete item at index, shifting all trailing elements left
+        - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
+        - [x] find(item) - looks for value and returns first index with that value, -1 if not found
+        - [x] resize(new_capacity) // private function
             - when you reach capacity, resize to double the size
             - when popping an item, if size is 1/4 of capacity, resize to half
-    - [ ] Time
+    - [x] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
@@ -543,18 +543,18 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         (for when you pass a pointer to a function that may change the address where that pointer points)
         This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
         - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] implement (I did with tail pointer & without):
-        - [ ] size() - returns number of data elements in list
-        - [ ] empty() - bool returns true if empty
-        - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-        - [ ] push_front(value) - adds an item to the front of the list
-        - [ ] pop_front() - remove front item and return its value
-        - [ ] push_back(value) - adds an item at the end
-        - [ ] pop_back() - removes end item and returns its value
-        - [ ] front() - get value of front item
-        - [ ] back() - get value of end item
-        - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-        - [ ] erase(index) - removes node at given index
+    - [x] implement (I did with tail pointer & without):
+        - [x] size() - returns number of data elements in list
+        - [x] empty() - bool returns true if empty
+        - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
+        - [x] push_front(value) - adds an item to the front of the list
+        - [x] pop_front() - remove front item and return its value
+        - [x] push_back(value) - adds an item at the end
+        - [x] pop_back() - removes end item and returns its value
+        - [x] front() - get value of front item
+        - [x] back() - get value of end item
+        - [x] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+        - [x] erase(index) - removes node at given index
         - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
         - [ ] reverse() - reverses the list
         - [ ] remove_value(value) - removes the first item in the list with this value
@@ -1261,7 +1261,7 @@ interview books, too, but I found this outstanding:
 
 No whiteboard at home? That makes sense. I'm a weirdo and have a big whiteboard. Instead of a whiteboard, pick up a
 large drawing pad from an art store. You can sit on the couch and practice. This is my "sofa whiteboard".
-I added the pen in the photo for scale. If you use a pen, you'll wish you could erase. Gets messy quick. I use a pencil 
+I added the pen in the photo for scale. If you use a pen, you'll wish you could erase. Gets messy quick. I use a pencil
 and eraser.
 
 ![my sofa whiteboard](https://d3j2pkmjtin6ou.cloudfront.net/art_board_sm_2.jpg)
@@ -1303,7 +1303,7 @@ Coding Interview Question Videos:
 Challenge sites:
 - [LeetCode](https://leetcode.com/)
     - My favorite coding problem site. It's worth the subscription money for the 1-2 months you'll likely be preparing.
-    - [LeetCode solutions from FisherCoder](https://github.com/fishercoder1534/Leetcode) 
+    - [LeetCode solutions from FisherCoder](https://github.com/fishercoder1534/Leetcode)
     - See Nick White Videos above for short code-throughs
 - [HackerRank](https://www.hackerrank.com/)
 - [TopCoder](https://www.topcoder.com/)
@@ -1455,8 +1455,8 @@ You're never really done.
       that is just an intro. This a guidebook on program design and architecture.
 
 ## Additional Learning
-    
-    I added them to help you become a well-rounded software engineer, and to be aware of certain 
+
+    I added them to help you become a well-rounded software engineer, and to be aware of certain
     technologies and algorithms, so you'll have a bigger toolbox.
 
 - ### Compilers
@@ -1791,7 +1791,7 @@ You're never really done.
     above because it's just too much. It's easy to overdo it on a subject.
     You want to get hired in this century, right?
 
-- **SOLID**   
+- **SOLID**
     - [ ] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
     - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
         - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
